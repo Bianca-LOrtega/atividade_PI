@@ -7,6 +7,7 @@ function gerarNumeroAleatorio(min, max) {
 // ------------ Função para atualizar KPIs ------------ //
 
 function atualizarKPIs() {
+    var nomeUsuario = sessionStorage.NOME_USUARIO;
     var total = gerarNumeroAleatorio(100, 200);
     var aprovados = gerarNumeroAleatorio(70, total);
     var reprovados = total - aprovados;
@@ -80,3 +81,12 @@ function atualizarGraficoBarra() {
 
 atualizarKPIs(); // Atualiza ao carregar a página
 setInterval(atualizarKPIs, 5000); // Atualiza a cada 5 segundos
+
+window.onload = function() {
+    
+    const nomeUsuario = sessionStorage.NOME_USUARIO;
+
+    if (nomeUsuario) {
+         nome_usuario.innerHTML = sessionStorage.NOME_USUARIO
+    }
+};
