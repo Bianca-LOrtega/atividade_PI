@@ -5,6 +5,19 @@
 
 .simulador .container {
   flex-direction: column;
-  height: 600px;
+  height: auto;
   padding: 20px;
+}
+
+.bloco {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.imagem-bloco {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
 }
