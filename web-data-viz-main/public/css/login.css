@@ -1,7 +1,8 @@
 .login {
   height: var(--tamanho-login);
-  background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+  background-image: url('../assets/imgs/banner_cadastro.jpg');
   background-size: cover;
+  background-position: 10%;
 }
 
 .login .container {
@@ -12,12 +13,12 @@
 
 .card {
   width: 50%;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  color: palevioletred;
+  color: rgb(0, 0, 0);
   flex-direction: column;
   height: fit-content;
   padding: 20px 0;
@@ -42,19 +43,21 @@
 }
 
 .formulario input {
-  border: 2px solid #32b9cd;
+  border: 2px solid black;
   text-align: center;
   border-radius: 10px;
   margin: 0;
+  padding: 10px 30px;
+  text-align: center;
 }
 
 .formulario select {
-  border: 2px solid #32b9cd;
+  border: none;
   background-color: white;
-  color: gray;
+  color: rgb(255, 255, 255);
   height: 36px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 0;
 }
 
