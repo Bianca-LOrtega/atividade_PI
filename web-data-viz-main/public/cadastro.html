@@ -105,7 +105,8 @@
     var emailVar = email_input.value;
     var senhaVar = senha_input.value;
     var confirmacaoSenhaVar = confirmacao_senha_input.value;
-    var codigoVar = codigo_input.value;
+    var idEmpresaVincular = codigo_input.value;
+  
 
     // Verificando se há algum campo em branco
     if (
@@ -113,7 +114,7 @@
       emailVar == "" ||
       senhaVar == "" ||
       confirmacaoSenhaVar == "" ||
-      codigoVar == ""
+      idEmpresaVincular == ""
     ) {
       cardErro.style.display = "block";
       mensagem_erro.innerHTML =
@@ -127,7 +128,7 @@
 
     // Verificando se o código de ativação é de alguma empresa cadastrada
     for (let i = 0; i < listaEmpresasCadastradas.length; i++) {
-      if (listaEmpresasCadastradas[i].codigo_ativacao == codigoVar) {
+      if (listaEmpresasCadastradas[i].codigo_ativacao == idEmpresaVincular) {
         idEmpresaVincular = listaEmpresasCadastradas[i].id
         console.log("Código de ativação válido.");
         break;

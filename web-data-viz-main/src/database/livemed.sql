@@ -16,7 +16,6 @@ create table usuario (
 	nome VARCHAR(80) NOT NULL,
 	email VARCHAR(100) NOT NULL,
 	senha VARCHAR(40) NOT NULL,
-	tipo VARCHAR(20) NOT NULL,
 	fk_empresa INT NOT NULL,
 	foreign key (fk_empresa) references empresa(id)
 );
