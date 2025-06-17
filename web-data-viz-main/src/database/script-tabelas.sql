@@ -42,7 +42,7 @@ create table aquario (
 	FOREIGN KEY (fk_empresa) REFERENCES empresa(id)
 );
 
-/* esta tabela deve estar de acordo com o que está em INSERT de sua API do arduino - dat-acqu-ino */
+/* esta tabela deve estar de acordo com o que está em INSERT de sua API do arduino - dat-acqu-ino. */
 
 create table medida (
 	id INT PRIMARY KEY AUTO_INCREMENT,
