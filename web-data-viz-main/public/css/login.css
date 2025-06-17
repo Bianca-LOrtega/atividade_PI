@@ -3,6 +3,7 @@
   background-image: url('../assets/imgs/banner_cadastro.jpg');
   background-size: cover;
   background-position: 10%;
+  height: 100vh;
 }
 
 .login .container {
@@ -12,8 +13,8 @@
 }
 
 .card {
-  width: 50%;
-  background-color: #ffffff;
+  width: 30%;
+  background-color: rgb(255, 255, 255, 0.85);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -21,12 +22,12 @@
   color: rgb(0, 0, 0);
   flex-direction: column;
   height: fit-content;
-  padding: 20px 0;
+  padding: 80px;
 }
 
 .card h2 {
   margin: 0;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .formulario {
@@ -35,11 +36,14 @@
   width: 80%;
   justify-content: space-around;
   flex-direction: column;
+  align-items: center;
 }
 
 .formulario span {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 800;
+  margin-block: 5px;
+  text-align: center;
 }
 
 .formulario input {
@@ -69,7 +73,6 @@
 }
 
 .botao {
-  cursor: pointer;
   font-family: "Barlow", sans-serif;
   border: 0;
   border-radius: 5px;
@@ -81,6 +84,13 @@
   height: 30px;
   align-self: center;
   margin-top: 20px;
+  transition: 0.5s ease;
+}
+
+.botao:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #ba0d47;
 }
 
 .loading-div {
