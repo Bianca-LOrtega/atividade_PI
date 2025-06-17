@@ -4,8 +4,9 @@
 .banner {
     height: var(--tamanho-banner);
     color: white;
-    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+    background-image: url('../assets/imgs/banner.jpg');
     background-size: cover;
+    background-position: 5%;
   }
   
   .banner .container {
@@ -16,9 +17,13 @@
   
   .banner .container p {
     width: 50%;
-    margin: 0;
+    margin-top: 80px;
     padding: 0;
     font-size: 36px;
+    color:rgb(255, 255, 255);
+    background-color: rgba(255, 47, 64, 0.65);
+    border-radius: 1rem;
+    text-align: center;
   }
   
   .banner .container span {
@@ -28,32 +33,54 @@
   /*boxes*/
   
 
-  .social {
-    background-color: #e5e5e5;
+  .container_sobre{
+
     display: flex;
-  }
-  
-  .social .container {
     justify-content: center;
+    align-items: center;
   }
-  
-  .box img {
-    width: 170px;
-  }
-  
-  .social .container .boxes {
+.boxes {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 30px 0;
-  }
-  
-  .social p {
-    text-align: center;
-  }
-  
-  .box {
+    align-items: center; 
+
+    margin: 2%;
+    gap: 2%; 
+}
+
+.box {
+    width: 30%; 
+    height: 500px; 
+
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
+
+}
+
+  .box .img_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box .img_box>img{
+    width: 400px;
+    height: auto;
+  }
+
+
+  .box .texto_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+
+  .box .texto_box>p{
+    text-align: center;
   }
