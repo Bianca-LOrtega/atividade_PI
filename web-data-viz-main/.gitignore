@@ -1,1 +1,10 @@
 node_modules
+
+
+
+{
+  "name": "atividade_PI",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {}
+}
