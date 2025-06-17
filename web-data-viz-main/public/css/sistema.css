@@ -1,0 +1,9 @@
+.simulador {
+  color: white;
+}
+
+.simulador .container {
+  flex-direction: column;
+  height: 600px;
+  padding: 20px;
+}
